@@ -6,6 +6,32 @@
 </head>
 <body>
     Great Job!
-    <a href="/"><button>sign out</button></a>
+        <form method="post" action="/add_tweet">
+        <!-- Heading -->
+        <h1>
+        Add Tweet
+        </h1>
+        <!-- Title -->
+        <div>
+            <label>Title:</label>
+            <div>
+                <input type="Title" placeholder="Enter Title" name="title" maxlength="25" required>
+            </div>
+        </div>
+
+        <!-- Tweet -->
+        <div>
+            <label>Content:</label>
+            <div class="input-group">
+                <input type= "Tweet" placeholder="Enter Tweet" name="content" maxlength="280" required>
+            </div>
+        </div>
+        
+        <!-- Button -->
+        <div>
+            <input type="submit"/>
+        </div>
+    </form>
+    <a href="/signout">sign out</a>
 </body>
 </html>
